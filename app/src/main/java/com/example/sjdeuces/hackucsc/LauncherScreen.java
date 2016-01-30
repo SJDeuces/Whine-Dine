@@ -14,7 +14,7 @@ public class LauncherScreen extends AppCompatActivity {
     }
 
     public void goToMenu(View v){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, CollegeActivity.class);
         startActivity(intent);
     }
 }
