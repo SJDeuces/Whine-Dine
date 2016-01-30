@@ -7,8 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.sjdeuces.hackucsc.LauncherScreen"
-    android:focusable="false">
+    tools:context="com.example.sjdeuces.hackucsc.LauncherScreen">
 
     <Button
         android:layout_width="wrap_content"
@@ -17,9 +16,9 @@
         android:id="@+id/button00"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="110dp"
         android:clickable="true"
-        android:onClick="goToMenu"/>
+        android:onClick="goToMenu" />
 
     <Button
         android:layout_width="wrap_content"
@@ -28,17 +27,17 @@
         android:id="@+id/button01"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:clickable="true"
-        android:onClick="goToMenu"/>
+        android:onClick="goToMenu"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dinnerButton"
         android:id="@+id/button02"
-        android:layout_marginTop="85dp"
         android:layout_below="@+id/button01"
         android:layout_centerHorizontal="true"
-        android:clickable="true"
-        android:onClick="goToMenu"/>
+        android:layout_marginTop="65dp"
+        android:onClick="goToMenu"
+        android:clickable="true" />
 </RelativeLayout>
