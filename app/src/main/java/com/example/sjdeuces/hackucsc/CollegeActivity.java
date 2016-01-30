@@ -17,6 +17,7 @@ public class CollegeActivity extends AppCompatActivity {
 
     private void TieredDiningHallList(){
         //get public eatingtime to know how to tier
+        CollegeInfo cInfo;
 
         /*request ethan's server for the DH rating at
         that eating time.
