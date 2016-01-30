@@ -13,12 +13,13 @@ public class LauncherScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher_screen);
     }
+
     public void goToCollege(View v){
         Intent intent = new Intent(this, CollegeActivity.class);
         startActivity(intent);
     }
 
-    public void goToSettings(View v){
+    public void goToSettings(View v) {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }

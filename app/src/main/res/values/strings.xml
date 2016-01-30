@@ -4,4 +4,7 @@
     <string name="lunchButton">Lunch</string>
     <string name="dinnerButton">Dinner</string>
     <string name="settingsButton">Settings</string>
+    <string name="viewAlert">Receive alerts:</string>
+    <string name="alertMM">Meatless Monday</string>
+    <string name="alertFF">Farm Friday</string>
 </resources>

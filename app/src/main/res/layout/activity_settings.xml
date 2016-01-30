@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Receive alerts:"
+        android:text="@string/viewAlert"
         android:id="@+id/alertsView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -26,9 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Meatless Monday"
+        android:text="@string/alertMM"
         android:id="@+id/mmAlert"
-        android:layout_above="@+id/textView"
+        android:layout_above="@+id/ffAlert"
         android:layout_alignLeft="@+id/alertsView"
         android:layout_alignStart="@+id/alertsView"
         android:layout_marginBottom="54dp" />
@@ -37,10 +37,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Farm Friday"
-        android:id="@+id/textView"
+        android:text="@string/alertFF"
+        android:id="@+id/ffAlert"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/mmAlert"
-        android:layout_alignStart="@+id/mmAlert" />
+        android:layout_alignStart="@+id/mmAlert"
+        android:layout_alignParentEnd="false" />
 
 </RelativeLayout>
