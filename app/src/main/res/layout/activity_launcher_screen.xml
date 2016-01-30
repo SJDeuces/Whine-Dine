@@ -14,21 +14,25 @@
         android:layout_height="wrap_content"
         android:text="@string/breakfastButton"
         android:id="@+id/button00"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="29dp"
         android:clickable="true"
-        android:onClick="goToMenu" />
+        android:onClick="goToCollege"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lunchButton"
         android:id="@+id/button01"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="goToMenu"
-        android:clickable="true" />
+        android:onClick="goToCollege"
+        android:clickable="true"
+        android:layout_below="@+id/button00"
+        android:layout_alignLeft="@+id/button00"
+        android:layout_alignStart="@+id/button00"
+        android:layout_marginTop="64dp"
+        android:layout_alignRight="@+id/button00"
+        android:layout_alignEnd="@+id/button00" />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,8 +40,24 @@
         android:text="@string/dinnerButton"
         android:id="@+id/button02"
         android:layout_below="@+id/button01"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
-        android:onClick="goToMenu"
-        android:clickable="true" />
+        android:onClick="goToCollege"
+        android:clickable="true"
+        android:layout_alignLeft="@+id/button01"
+        android:layout_alignStart="@+id/button01"
+        android:layout_alignRight="@+id/button01"
+        android:layout_alignEnd="@+id/button01" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settingsButton"
+        android:id="@+id/button03"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:layout_alignLeft="@+id/button02"
+        android:layout_alignStart="@+id/button02"
+        android:layout_alignRight="@+id/button02"
+        android:layout_alignEnd="@+id/button02"
+        android:onClick="goToSettings" />
 </RelativeLayout>

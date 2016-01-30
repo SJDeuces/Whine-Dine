@@ -3,4 +3,5 @@
     <string name="breakfastButton">Breakfast</string>
     <string name="lunchButton">Lunch</string>
     <string name="dinnerButton">Dinner</string>
+    <string name="settingsButton">Settings</string>
 </resources>
