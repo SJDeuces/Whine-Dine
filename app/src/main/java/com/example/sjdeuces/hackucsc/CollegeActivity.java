@@ -26,7 +26,7 @@ public class CollegeActivity extends AppCompatActivity {
          */
     }
 
-    public void ToTheMenu(View v) {
+    public void goToMenu(View v) {
 
 
     }
