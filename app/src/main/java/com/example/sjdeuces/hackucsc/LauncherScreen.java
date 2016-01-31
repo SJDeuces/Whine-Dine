@@ -5,11 +5,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class LauncherScreen extends AppCompatActivity {
-    Button b0 = (Button) findViewById(R.id.button00);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +15,7 @@ public class LauncherScreen extends AppCompatActivity {
 
     public void goToCollege(View v){
         Intent intent = new Intent(this, CollegeActivity.class);
+        intent.putExtra("collegeView", v.getId());
         startActivity(intent);
     }
 
