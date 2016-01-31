@@ -21,6 +21,6 @@ public class LauncherScreen extends AppCompatActivity {
 
     public void goToSettings(View v) {
         Intent intent = new Intent(this, SettingsActivity.class);
-        startActivity(intent); // push fix
+        startActivity(intent); // hi
     }
 }
