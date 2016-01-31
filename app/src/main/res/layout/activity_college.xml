@@ -16,7 +16,9 @@
         android:id="@+id/button1"
         android:layout_marginTop="52dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToMenu"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -25,7 +27,9 @@
         android:id="@+id/button2"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp" />
+        android:layout_marginTop="41dp"
+        android:clickable="true"
+        android:onClick="goToMenu"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -34,7 +38,9 @@
         android:id="@+id/button3"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_alignStart="@+id/button2"
+        android:clickable="true"
+        android:onClick="goToMenu"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -44,7 +50,9 @@
         android:layout_marginTop="41dp"
         android:layout_below="@+id/button3"
         android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignStart="@+id/button3"
+        android:clickable="true"
+        android:onClick="goToMenu"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -53,6 +61,8 @@
         android:id="@+id/button5"
         android:layout_below="@+id/button4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+        android:layout_marginTop="43dp"
+        android:clickable="true"
+        android:onClick="goToMenu"/>
 
 </RelativeLayout>

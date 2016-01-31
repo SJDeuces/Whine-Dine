@@ -1,5 +1,6 @@
 package com.example.sjdeuces.hackucsc;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,8 +29,10 @@ public class MenuActivity extends AppCompatActivity {
     }
 
 
-    public void toReview(View v){
-
+    public void goToReview(View v){
+        Intent intent = new Intent(this, ReviewActivity.class);
+        intent.putExtra("reviewView", v.getId());
+        startActivity(intent);
     }
 
     private void DynamicMenuLayout(int n){
