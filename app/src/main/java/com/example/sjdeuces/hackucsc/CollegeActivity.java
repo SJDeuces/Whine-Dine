@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-
 public class CollegeActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +16,8 @@ public class CollegeActivity extends AppCompatActivity {
 
     private void TieredDiningHallList(){
         //get public eatingtime to know how to tier
-        CollegeInfo cInfo;
+        CollegeInfo cInfo = new CollegeInfo();
+
 
         /*request ethan's server for the DH rating at
         that eating time.

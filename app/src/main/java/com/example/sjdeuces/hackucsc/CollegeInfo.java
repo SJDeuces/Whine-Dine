@@ -4,9 +4,9 @@ package com.example.sjdeuces.hackucsc;
  * Created by SJDeuces on 1/30/16.
  */
 public class CollegeInfo {
-    private String collegeName;
-    private String eatingTime;
-    private String ratingO;
-    private String food;
-    private String ratingI;
+    public String collegeName;
+    public String eatingTime;
+    public String ratingO;
+    public String food;
+    public String ratingI;
 }
