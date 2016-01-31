@@ -34,8 +34,14 @@ public class CollegeActivity extends AppCompatActivity {
     private void TieredDiningHallList(){
         //get public eatingtime to know how to tier
         CollegeInfo cInfo = new CollegeInfo();
-        //blah =
-
+        //mealTime();
+        String[] arr1 = {"CowellStevenson", "CrownMerrill", "eightOakes",
+                "NineTen", "PorterKresge"};
+        int [] arr2 = {}
+        int[] arr3 = doInsertionSort(arr2);
+        for(int i:arr2){
+            //button logic
+        }
         /*request ethan's server for the DH rating at
         that eating time.
         */
@@ -51,19 +57,66 @@ public class CollegeActivity extends AppCompatActivity {
          */
 
 
-
-        /*call ethan's data via gson to know the avg tier
-        for that eating time*/
-
         /*set the buttons from highest tier DH to lowest
         with the avg rating.
          */
     }
 
+    public void mealTime(){
+        String id = getIntent().getStringExtra("CollegeActivity");
+        //Gets mealtime averages
+        if(id == "Button00"){
+            //breakfast
+            String[] arr1 = {"CowellStevenson", "CrownMerrill", "eightOakes",
+                    "NineTen", "PorterKresge"};
+            int [] arr2 = {};
+            int[] arr3 = doInsertionSort(arr2);
+            for(int i:arr2){
+                //button logic
+            }
+        } else if( id == "Button01"){
+            //Lunch
+            String[] arr1 = {"CowellStevenson", "CrownMerrill", "eightOakes",
+                    "NineTen", "PorterKresge"};
+
+            //int[] arr3 = doInsertionSort(arr2);
+            //for(int i:arr2){
+                //button logic
+            }
+         else if( id == "Button03"){
+            //Dinner
+            String[] arr1 = {"CowellStevenson", "CrownMerrill", "eightOakes",
+                    "NineTen", "PorterKresge"};
+            int [] arr2 = {};
+            int[] arr3 = doInsertionSort(arr2);
+            for(int i:arr2){
+                //button logic
+            }
+        } else {
+
+        }
+    }
+
+
     public void goToMenu(View v) {
         Intent intent = new Intent(this, MenuActivity.class);
         intent.putExtra("menuView", v.getId());
         startActivity(intent);
+    }
+
+    public static int[] doInsertionSort(int[] input){
+
+        int temp;
+        for (int i = 1; i < input.length; i++) {
+            for(int j = i ; j > 0 ; j--){
+                if(input[j] < input[j-1]){
+                    temp = input[j];
+                    input[j] = input[j-1];
+                    input[j-1] = temp;
+                }
+            }
+        }
+        return input;
     }
 
 
