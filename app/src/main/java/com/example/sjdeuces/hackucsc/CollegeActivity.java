@@ -1,15 +1,25 @@
 package com.example.sjdeuces.hackucsc;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import org.json.JSONObject;
 
 public class CollegeActivity extends AppCompatActivity {
 
@@ -20,30 +30,6 @@ public class CollegeActivity extends AppCompatActivity {
         //TieredDiningHallList();
 
     }
-
-    private void request(){
-        String parsedString = "";
-
-        try {
-
-            URL url = new URL("whine-dine.herokuapp.com/api/menu?&dateoffset=0");
-            URLConnection conn = url.openConnection();
-
-            HttpURLConnection httpConn = (HttpURLConnection) conn;
-            httpConn.setAllowUserInteraction(false);
-            httpConn.setInstanceFollowRedirects(true);
-            httpConn.setRequestMethod("GET");
-            httpConn.connect();
-
-            InputStream is = httpConn.getInputStream();
-            parsedString = convertinputStreamToString(is);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
 
     private void TieredDiningHallList(){
         //get public eatingtime to know how to tier
